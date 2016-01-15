@@ -1,14 +1,17 @@
+# Water Infrastructure
+--- 
 Learning python and how to structure python packages.
 
-As a package it doesn't work yet but the code and tests can be run from the waterInfrastructure/src dir.
+As a package it doesn't work yet but the code and tests can be run from the [waterInfrastructure/src](waterInfrastructure/src) dir.
 
 
 For the given dataset here is the result.
-`>>> import waterInfrastructure as wi`
+##### Running:  
+`>>> import waterInfrastructure as wi`  
 `>>> wi.calculate("https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json")`
 
 
-result:
+##### result:  
 ``` bash
 {'number_water_points': {'Kpatarigu': 51, 'Zuedema': 18, 'Nawaasa': 6, 'Gbima': 3, 'Chondema': 4, 'Luisa': 8, 'Kpikpaluk': 3, 'Namgurima': 8, 'Kanbangsa': 8, 'Zanwara': 10, 'Bechinsa': 26, 'Logvasgsa': 4, 'Nyankpiensa': 8, 'Abanyeri': 4, 'Zangu-Vuga': 13, 'Akpari-yeri': 3, 'Jagsa': 38, 'Dorinsa': 17, 'Nabulugu': 31, 'Jaata': 8, 'Kom': 6, 'Badomsa': 27, 'Jiningsa-Yipaala': 3, 'Tantala': 22, 'Soo': 7, 'Zundem': 30, 'Dibisi': 2, 'Selinvoya': 13, 'Zua': 28, 'Chansa': 9, 'Alavanyo': 3, 'Gbaarigu': 5, 'Fiisa': 5, 'Kurugu': 9, 'Suik': 1, 'Mwalorinsa': 8, 'Tuisa': 4, 'Jiriwiensa': 8, 'Tankangsa': 6, 'Jiniensa': 1, 'Loagri_1_': 18, 'Jiningsa': 7, 'Bandem': 7, 'Nyandema': 3, 'Zogsa': 6, 'Kunkwah': 3, 'Gumaryili': 1, 'Arigu': 12, 'Kaasa': 25, 'Nayoku': 35, 'Vundema': 5, 'Guuta-Nasa': 11, 'Kanwaasa': 9, 'Banyangsa': 10, 'Longsa': 9, 'Garigu': 1, 'Kubore': 18, 'Kalaasa': 1, 'Chanpolinsa': 4, 'Kulbugu': 11, 'Piisa': 5, 'Sikabsa': 3, 'Zukpeni': 6, 'Gaadem': 2, 'Guuta': 32},
 
