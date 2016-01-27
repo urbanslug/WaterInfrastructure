@@ -1,7 +1,15 @@
 # Run various computations on various datasets.
 import collections
 
+data = [ dict(communities_villages="VilA", water_functioning="yes")
+           , dict(communities_villages="VilB", water_functioning="no")
+           , dict(communities_villages="VilC", water_functioning="yes")
+           , dict(communities_villages="VilA", water_functioning="yes")
+           , dict(communities_villages="VilB", water_functioning="no")
+           ]
+
 # number_functional
+# Number of functional water points.
 def sumFunctionalWaterPoints(dataSet: [dict]) -> int:
     """
     Given a dataset with structure: [{"community_villages" => <name>, "water_functioning" => <yes/no>},...]
@@ -20,6 +28,7 @@ def sumWaterPointsPerSplitKey(split_key, dataSet: [dict]) -> dict:
     """
     listOfCommunityVillages = [x[split_key] for x in dataSet]
     return dict(collections.Counter(listOfCommunityVillages))
+
 
 def sumBrokenWaterPointsPerSplitKey(boolean_key, split_key, dataSet: [dict]) -> dict:
     """

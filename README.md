@@ -3,7 +3,7 @@ Python code to process on data from [this JSON file](https://raw.githubuserconte
 
 
 ### Tests:
-Tests are broken. Rewriting them.
+100% test coverage. All pass. :D
 `$ python -m waterInfrastructure.tests`
 
 
