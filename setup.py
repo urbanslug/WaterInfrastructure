@@ -10,6 +10,6 @@ setup(
     , license='MIT'
     , package_dir={"": "."}
     , packages=['waterInfrastructure']
-    , install_requires=['requests',]
+    , install_requires=['requests']
     , zip_safe=False
 )
