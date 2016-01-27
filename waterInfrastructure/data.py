@@ -31,7 +31,7 @@ To test for this?
 >>> len(r.json())
 712"""
 # Reduce a [dict] extracted from the JSON to have less values but the list will remain to be of the same size.
-def reduce(decodedJson: [dict], boolean_key: str, split_key: str) -> [dict]:
+def reduce(boolean_key: str, split_key: str, decodedJson: [dict]) -> [dict]:
     """"
     Reduce a list of big dicts to a list of smaller dicts with `boolean_key` and `split_key` as the keys.
     reduce([{k:v, k1:v1...}, {..., k5:v5, k6:v6...}]) => [{split_key: <value>, boolean_key: <value>}]
@@ -48,4 +48,4 @@ def get_data(boolean_key, split_key: str, url) -> [dict]:
     get_required_data (<split_key>) => [{split_key: <value>, water_functioning: <value>}, ...]
     """
     theJson = fetchJSON(url)
-    return reduce(theJson, boolean_key, split_key)
+    return reduce(boolean_key, split_key, theJson)
