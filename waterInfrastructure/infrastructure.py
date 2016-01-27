@@ -1,5 +1,5 @@
-import data
-import compute
+import waterInfrastructure.data as data
+import waterInfrastructure.compute as compute
 
 url = "https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json"
 
